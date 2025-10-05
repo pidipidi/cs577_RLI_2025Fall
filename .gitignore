@@ -1,0 +1,8 @@
+*.md~
+*.py~
+*.pyc
+
+*.egg-info
+*.ipynb_checkpoints
+kuka_model_*.zip
+*.pkl
