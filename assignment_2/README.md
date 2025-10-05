@@ -12,7 +12,7 @@ This script will install a virtual environment to install dependencies. If you w
 Let's verify if your OpenAI Gym is properly installed. This will show random grasping trials using a KUKA manipulator when you run the following command:
 ~~~~bash
 source ./activate.sh
-python test/test_pybullet_gym.py
+python src/test_pybullet_gym.py
 ~~~~
 
 # Training and testing with Stable Baseline3
@@ -25,11 +25,11 @@ gedit ./envs/kuka.py
 Then, you will be able to train a grasping policy using any RL algorithms. For example, you will be able to see how to import the environment and run an RL algorithm:
 ~~~~bash
 source ./activate.sh
-python test/train_kuka_grasping_baselines3.py
+python src/train_kuka_grasping_baselines3.py
 ~~~~
 It will take time until your agent gets enough rewards. After training, you can test the learned policy by loading the learned model:
 ~~~~bash
-python test/test_kuka_grasping_baselines3.py
+python src/test_kuka_grasping_baselines3.py
 ~~~~
 
 
